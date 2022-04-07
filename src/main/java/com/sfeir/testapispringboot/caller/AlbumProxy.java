@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AlbumProxy {
 
-    public String id;
+    public int id;
     public String title;
     public String artist;
     public float price;
@@ -14,7 +14,7 @@ public class AlbumProxy {
         
     }
 
-    public AlbumProxy(String id, String title, String artist, float price) {
+    public AlbumProxy(int id, String title, String artist, float price) {
         this.id = id;
         this.title = title;
         this.artist = artist;
