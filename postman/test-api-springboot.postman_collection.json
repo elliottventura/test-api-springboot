@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "a4ae3bab-8e0e-4f65-b22d-ae8f0ba4daa0",
+		"name": "test-api-springboot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "albums",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/albums",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"albums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "albumById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/albums/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"albums",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "albums",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": \"10\",\"artist\": \"Betty Carter\",\"title\": \"The Modern Sound of Betty Carter\",\"price\": 49.99}\r\n"
+				},
+				"url": {
+					"raw": "localhost:8082/albums",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"albums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "albumsById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/albums/0",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"albums",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
